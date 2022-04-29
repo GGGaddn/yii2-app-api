@@ -1,0 +1,33 @@
+{
+    "name": "cebe/yii2-app-api",
+    "description": "Yii Framework Application Template for quickly building API-first applications.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "yiisoft/yii2": "~2.0.16",
+        "cebe/php-openapi": "^1.1",
+        "cebe/yii2-openapi": "^1.0",
+        "yiisoft/yii2-gii": "~2.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "api\\": "api/",
+            "backend\\": "backend/",
+            "console\\": "console/",
+            "common\\": "common/"
+        }
+    },
+    "config": {
+        "platform": {"php": "7.1.3"},
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
